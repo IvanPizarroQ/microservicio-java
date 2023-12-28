@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: microservicio-deployment
   labels:
-    app: microservicio
+    app: microservicio-java
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: microservicio
+      app: microservicio-java
   template:
     metadata:
       labels:
-        app: microservicio
+        app: microservicio-java
     spec:
       containers:
-      - name: microservicio
+      - name: microservicio-java
         image: ivanpizarroq/microservicio-java:latest
         ports:
         - containerPort: 8085
