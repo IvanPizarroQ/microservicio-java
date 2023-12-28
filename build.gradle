@@ -11,6 +11,7 @@ group = 'org.springframework.samples'
 version = '2.6.0'
 sourceCompatibility = '11'
 
+
 repositories {
   mavenCentral()
 }
