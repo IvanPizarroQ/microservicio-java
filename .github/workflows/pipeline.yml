@@ -55,7 +55,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Set PowerShell Execution Policy
       run: |
-        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+        Set-ExecutionPolicy Unrestricted
     - name: Deploy to Minikube
       run: |
         kubectl apply -f deployment.yml
