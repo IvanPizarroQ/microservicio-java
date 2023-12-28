@@ -45,7 +45,7 @@ jobs:
 
       - name: Docker Push
         run: |
-          docker push ipizarroq/microservicio-java 
+          docker push ivanpizarroq/microservicio-java 
 
   deploy: 
     runs-on: self-hosted 
